@@ -1,0 +1,67 @@
+/* 
+    Document   : defecto
+    Created on : 14/09/2013, 05:53:18 PM
+    Author     : david
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.completo_div{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;	
+    z-index:4;
+    visibility:visible;
+    opacity: .75;
+    filter:alpha(opacity=75);	
+}
+.centrado { 
+    position: absolute;
+    top: 50%; /* Buscamos el centro horizontal (relativo) del navegador */
+    left: 50%; /* Buscamos el centro vertical (relativo) del navegador */
+    width: 600 px; /* Definimos el ancho del objeto a centrar */
+    height: 400px; /* Definimos el alto del objeto a centrar */
+    margin-top: -200px; /* Restamos la mitad de la altura del objeto con un margin-top */
+    margin-left: -300px; /* Restamos la mitad de la anchura del objeto con un margin-left */
+}
+
+.foldtl:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 70px solid #eee;
+  border-left: 70px solid transparent;
+  -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+}
+
+div.centraTabla{
+text-align: center;
+}
+
+div.centraTabla table {
+margin: 0 auto;
+text-align: left;
+}
+
+.divabajo{
+    bottom: 0;
+    position: absolute;
+    width: 80%;
+    z-index: 50000;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 10% 
+}
+
+
+

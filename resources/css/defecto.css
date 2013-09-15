@@ -10,7 +10,7 @@ root {
     display: block;
 }
 .completo_div{
-    position:fixed;
+    position: fixed;
     top:0px;
     left:0px;
     width:100%;
@@ -31,26 +31,26 @@ root {
 }
 
 .foldtl:before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 0px;
-  height: 0px;
-  border-bottom: 70px solid #eee;
-  border-left: 70px solid transparent;
-  -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
-  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
-  box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0px;
+    height: 0px;
+    border-bottom: 70px solid #eee;
+    border-left: 70px solid transparent;
+    -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+    box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
 }
 
 div.centraTabla{
-text-align: center;
+    text-align: center;
 }
 
 div.centraTabla table {
-margin: 0 auto;
-text-align: left;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .divabajo{
@@ -62,6 +62,46 @@ text-align: left;
     margin-left: 8%;
     margin-right: 10% 
 }
+
+#contenedor{
+    width:760px;
+    height:700px;
+    margin: 0px auto;
+}
+#cabecera{
+    width:760px;
+    height:100px;
+    text-align:center;
+    vertical-align:middle;
+}
+#menu{
+    float:left;
+    width:180px;
+    height:500px;    
+}
+
+
+#principal{
+    float:left;
+    width:580px;
+    height:500px;
+    
+}
+#pie{
+    clear:both;
+    width:760px;
+    height:100px;
+}
+div#pie img{
+    vertical-align:middle;/* Utlilizo una img de referencia y un vertical-align:middle para centrar (en vertical)el texto en el div. En el ej37 uso un line-height */
+}
+#scroll {
+     width:300px;
+     height:170px;
+     background-color:#F2F2F2;
+     overflow:auto;
+}
+
 
 
 

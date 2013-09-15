@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Handler for .ready() called.
 
-
+    $(document).puitooltip(); 
     $('#txtpass').puipassword({
         promptLabel: 'Ingrese Su Contraseña',
         weakLabel: 'Seguridad: Baja',

@@ -1,0 +1,17 @@
+/* 
+    Document   : admin
+    Created on : 14/09/2013, 08:31:10 PM
+    Author     : david
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.ui-widget {
+    font-size: 70%;
+}
+.ui-widget .ui-widget {
+    font-size: 95%;
+}

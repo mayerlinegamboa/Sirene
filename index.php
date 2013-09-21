@@ -6,7 +6,7 @@
         <script type="text/javascript" src="resources/js/jquery.js"></script>
         <script type="text/javascript" src="resources/js/jquery-ui.js"></script>
         <script type="text/javascript" src="resources/js/primeui-0.9.6.js"></script>
-        <script type="text/javascript" src="acceso/web/js/Acceso.js"></script>
+        <script type="text/javascript" src="acceso/js/Acceso.js"></script>
 
         <link rel="stylesheet" href="resources/css/primeui-0.9.6.css" />  
         <link rel="stylesheet" href="resources/css/jquery-ui.css" />  

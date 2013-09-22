@@ -23,7 +23,7 @@
         ?>
 
 
-
+        <div id="msgerror" />
 
 
 
@@ -48,7 +48,7 @@
                                         </tr>
                                         <tr>
                                             <td style="text-align: right">Password: *</td>
-                                            <td><input id="txtpass" name="txtpass" type="password" title="Ingrese Contraseña"  /></td>
+                                            <td><input id="txtpass" name="txtpass" type="password" title="Ingrese Contraseña" /></td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">

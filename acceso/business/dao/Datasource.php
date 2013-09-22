@@ -57,7 +57,7 @@ class Datasource {
          * MySQL dependency in application code.
          */
         function execute($sql) {
-
+                
                 // Change this line to reflect whatever Database system you are using:
                 $result = mysql_query($sql, $this->dbLink);
                 $this->checkErrors($sql);

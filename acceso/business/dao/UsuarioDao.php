@@ -25,7 +25,7 @@
   * "Tuomo.Lukka@iki.fi" for more information. Thank you!
   */
 
-
+ include '../../../acceso/business/entidades/Usuario.php';
 
 class UsuarioDao {
 
@@ -56,6 +56,14 @@ class UsuarioDao {
           $this->load($conn, $valueObject);
           return $valueObject;
     }
+    
+    function getObjectPassyLogin($conn, $login, $pass) {
+        $valueObject = $this->createValueObject();
+        $valueObject->setLogin($login);
+        $valueObject->setPassword($pass);
+        $this->buscarxPassyLogin($conn, $valueObject);
+        return $valueObject;
+    }
 
 
     /**
@@ -84,6 +92,14 @@ class UsuarioDao {
           else
                return false;
     }
+    
+    function buscarxPassyLogin($conn,$usuario){    
+        $sql="SELECT * FROM tblusuario u WHERE u.login = '".$usuario->getLogin()."' and u.password='".$usuario->getPassword()."'";                
+        if ($this->singleQuery($conn, $sql, $usuario))
+               return true;
+          else
+               return false;
+    }
 
 
     /**
@@ -104,7 +120,7 @@ class UsuarioDao {
 
           return $searchResults;
     }
-
+    
 
 
     /**
@@ -369,7 +385,7 @@ class UsuarioDao {
 
           $searchResults = array();
           $result = $conn->execute($sql);
-
+          
           while ($row = $conn->nextRow($result)) {
                $temp = $this->createValueObject();
 
@@ -381,7 +397,7 @@ class UsuarioDao {
                $temp->setSesion($row[5]); 
                array_push($searchResults, $temp);
           }
-
+          
           return $searchResults;
     }
 }

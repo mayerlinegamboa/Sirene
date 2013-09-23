@@ -4,9 +4,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-require("../business/dao/Datasource.php");
-require("../business/dao/Usuario.php");
-require("../business/dao/UsuarioDao.php");
+require("../../common/datasource/Datasource.php");
+require("../business/dao/Usuario/Usuario.php");
+require("../business/dao/Usuario/UsuarioDao.php");
 
 
 
